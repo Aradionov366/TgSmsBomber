@@ -263,6 +263,12 @@ def handle_message_received(message):
     elif text == '❗️ FAQ / Соглашение':
         bot.send_message(chat_id, 'Вы автоматически отвечаете за свои действия с этим ботом. Мы не несем ответственности, только тестирование! Спасибо за внимание.')
 
+    elif text == 'Пидор':
+        bot.send_message(chat_id, 'Батя твой')
+
+    elif text == 'Шлюха':
+        bot.send_message(chat_id, 'Мамка твоя')
+
     elif text == 'Остановить флуд':
         if chat_id not in running_spams_per_chat_id:
             bot.send_message(chat_id, 'Флуд еще не начинался')
